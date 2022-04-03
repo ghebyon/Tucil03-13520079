@@ -10,7 +10,7 @@ from Puzzle import *
 from Puzzle import Puzzle
 
 linkedinURL = "https://www.linkedin.com/in/ghebyon-nainggolan-5002ab218/"
-githubURL = "https://github.com/ghebyon/Tucil03-Stima"
+githubURL = "https://github.com/ghebyon/"
 
 class MainWindow(QMainWindow):
     def __init__(self):
