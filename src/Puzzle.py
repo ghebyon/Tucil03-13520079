@@ -1,7 +1,6 @@
-from typing import List
 import time
 class Puzzle:
-    def __init__(self, level : int, puzzle : List, solusi):
+    def __init__(self, level : int, puzzle : list, solusi):
         self.level = level
         self.puzzle = puzzle
         g_cost = 0
@@ -109,4 +108,3 @@ def BranchnBound(notVisited : list): #parameter berisi list of object Puzzle
                         notVisited.append(newPuzzle)
                 trashPuzzle = notVisited.pop(idxPuzzleMinCost)
                 visited.append(trashPuzzle.puzzle)
-            
