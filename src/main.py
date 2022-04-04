@@ -154,21 +154,17 @@ class MainWindow(QMainWindow):
     
     def slideLeftMenu(self):
         width = self.ui.slidemenu.width()
-        # If minimized
         if width == 0:
             newWidth = 300
             self.ui.slideMenuButton.setIcon(QtGui.QIcon(u":/newPrefix/icons/chevron-left.svg"))
-        # If maximized
         else:
-            # Restore menu
             newWidth = 0
             self.ui.slideMenuButton.setIcon(QtGui.QIcon(u":/newPrefix/icons/align-left.svg"))
 
-        # Animate the transition
-        self.animation = QPropertyAnimation(self.ui.slidemenu, b"maximumWidth")#Animate minimumWidht
+        self.animation = QPropertyAnimation(self.ui.slidemenu, b"maximumWidth")
         self.animation.setDuration(250)
-        self.animation.setStartValue(width)#Start value is the current menu width
-        self.animation.setEndValue(newWidth)#end value is the new menu width
+        self.animation.setStartValue(width)
+        self.animation.setEndValue(newWidth)
         self.animation.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
         self.animation.start()
 
