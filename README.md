@@ -2,7 +2,7 @@
 
 <br />
 <div align="center">
-    <img src="https://github.com/ghebyon/Tucil03-13520079/tree/main/src/icons/GUI-15Puzzle" width="500" height="">
+    <img src="https://github.com/ghebyon/Tucil03-13520079/blob/main/src/icons/GUI-15Puzzle.JPG" width="500" height="">
 
   <h2 align="center">15-PUZZLE SOLVER</h2>
 
